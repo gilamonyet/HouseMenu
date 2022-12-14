@@ -1,16 +1,15 @@
 @font-face {
-    font-family: russo;
-    src: url("../fonts/Russo_one.ttf");
+    font-family: 'Secular One', sans-serif;
 }
 
 #main-menu-container {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	position: relative;
 	text-align: center;
 	top: 100px;
 	left: 30%;
 	width: 40%;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.2);
 	border-radius: 2rem;
 	padding: 20px;
 	padding-bottom: 0;
@@ -34,7 +33,7 @@
 .loading-text {
     position: relative;
     color: white;
-    font-family: 'russo';
+    font-family: 'Secular One';
     text-align: center;
     top: 68%;
     font-size: 80px;
@@ -43,7 +42,7 @@
 .loading-sub-text {
     position: relative;
     color: white;
-    font-family: 'russo';
+    font-family: 'Secular One';
     text-align: center;
     top: 68.5%;
     font-size: 20px;
@@ -56,16 +55,16 @@
 
 #house-menu {
 	position: absolute;
-	font-family: 'russo';
+	font-family: 'Secular One';
 	top: 200px;
 	left: 50px;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
 	color: white;
-	padding: 8px 20px;
-	padding-bottom: 0px;
-	border-radius: 2rem;
+	border-radius: 0.2rem;
 	width: 300px;
 	height: auto;
+        padding-bottom: 16px;
 }
 
 .menu-title {
@@ -73,14 +72,14 @@
 }
 
 #house-menu-content {
-	border-top: solid 5px rgb(89, 226, 89);
-	background: rgba(0, 0, 0, 0.3);
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
 	position: relative;
-	padding: 8px 20px;
+	padding: 24px;
 	left: -20px;
 	width: 100%;
-	border-bottom-left-radius: 2rem;
-	border-bottom-right-radius: 2rem;
+	border-bottom-left-radius: 0.2rem;
+	border-bottom-right-radius: 0.2rem;
 }
 
 .house-menu-text {
@@ -91,18 +90,18 @@
 
 .house-menu-option {
 	transition: 0.2s ease all 0s;
-	border-radius: 100rem;
+	border-radius: 0.2rem;
 	position: relative;
-	background: rgba(255, 255, 255, 0.1);
-	padding: 5px 20px;
-	margin: 16px 0px;
+	background: #2F80ED;
+	padding: 8px 16px;
+	margin: 8px 0px;
 	left: 20px;
-	width: calc(100% - 80px);
+	width: calc(100% - 72px);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	cursor: pointer;
-	box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .car-class {
@@ -123,7 +122,7 @@
 }
 
 .force-font {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	font-weight: 20 !important;
 }
 
@@ -147,7 +146,6 @@
 #item-container {
 	position: relative;
 	background: rgba(0, 0, 0, 0.2);
-	width: calc(100% + 20px);
 	padding: 8px 50px;
 	margin: 0;
 	left: -60px;
@@ -167,11 +165,9 @@
 }
 
 .house-menu-option:hover {
+	background: #245CA7;
 	transition: 0.2s ease all 0s;
-	width: calc(100% - 40px);
-	left: 0; 
-	padding: 10px 20px;
-	box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.7);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .context-buttons-car {
@@ -299,12 +295,12 @@
 }
 
 #return-menu-button {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	position: absolute;
 	top: -5px;
 	left: 30px;
 	transition: 0.2s ease all 0s;
-	font-family: 'russo';
+	font-family: 'Secular One';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
@@ -326,11 +322,11 @@
 }
 
 #leave-menu-button {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	position: fixed;
 	right: 30px;
 	transition: 0.2s ease all 0s;
-	font-family: 'russo';
+	font-family: 'Secular One';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
@@ -363,7 +359,7 @@
 /* MODAL */
 
 #sell-confirmation-modal {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	color: black;
 	background: white;
 	position: fixed;
@@ -378,7 +374,7 @@
 	text-align: center;
 }
 #info-modal {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	color: black;
 	background: white;
 	position: fixed;
@@ -421,7 +417,7 @@
 }
 
 #transfer-modal {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	color: black;
 	background: white;
 	position: fixed;
@@ -440,10 +436,10 @@
 }
 
 #modal-confirm {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	position: relative;
 	transition: 0.2s ease all 0s;
-	font-family: 'russo';
+	font-family: 'Secular One';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
@@ -465,10 +461,10 @@
 }
 
 #modal-cancel {
-	font-family: 'russo';
+	font-family: 'Secular One';
 	position: relative;
 	transition: 0.2s ease all 0s;
-	font-family: 'russo';
+	font-family: 'Secular One';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
