@@ -287,13 +287,14 @@ const selectHouseOption = () => {
 }
 
 window.onload = function() {
-    $("#container").hide();
-    $("#container").html(containerContent);
+    // $("#container").hide();
+    // $("#container").html(containerContent);
+    $("#main-menu-container").hide();
     $('#sell-confirmation-modal').hide();
     $('#info-modal').hide();
     $('#leave-menu-button').hide();
     $("#transfer-modal").hide();
-    $("#house-menu").hide();
+    // $("#house-menu").hide();
     $(".loading").hide();
     window.addEventListener('message', (event) => {
         if (event.data.type === 'veh-menu') {
