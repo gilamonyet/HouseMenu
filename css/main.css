@@ -2,6 +2,75 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+.EventBox{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+	isolation: isolate;
+
+	position: relative;
+	width: 326px;
+	height: 101px;
+	margin:auto;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(1px);
+}
+.Close {
+	background-image:url(images/closeIcon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity:0.20000000298023224;
+	width:10px;
+	height:10px;
+	position:absolute;
+	left:94%;
+	top:9%;
+}
+
+.TitleWrapper {
+	position: absolute;
+	top: 34%;
+}
+
+.IconEvent { 
+	background-image:url(images/AlertIcon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:2.5px;
+}
+
+.EventTitle {
+	color:rgba(255, 255, 255, 1);
+	width:61px;
+	height:29px;
+	position:absolute;
+	left:28px;
+	top:0px;
+	font-family:DM Sans;
+	text-align:left;
+	font-size:22px;
+}
+
+.EventText {
+	color:rgba(255, 255, 255, 1);
+	opacity:0.6000000238418579;
+	width:273px;
+	height:20px;
+	position:absolute;
+	left:0px;
+	top:33px;
+	font-family:DM Sans;
+	text-align:left;
+	font-size:14px;
+}
+
 .PlayerInfo { 
 	width:250px;
 	height:120px;
@@ -75,6 +144,8 @@
 
 .IconLevel { 
 	background-image:url(images/levelIcon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 	width:16px;
 	height:16px;
 	position:absolute;
@@ -112,6 +183,8 @@
 }
 .IconMoney { 
 	background-image:url(images/moneyIcon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 	width:16px;
 	height:16px;
 	position:absolute;
