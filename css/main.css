@@ -2,7 +2,39 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.EventBox{
+.h1 {
+	font-family:DM Sans;
+	font-size:24px;
+}
+
+.h2 {
+	font-family:DM Sans;
+	font-size:22px;
+}
+
+.h3 {
+	font-family:DM Sans;
+	font-size:20px;
+}
+
+.h4 {
+	font-family:DM Sans;
+	font-size:16px;
+}
+
+.p {
+	font-family:DM Sans;
+	font-size:14px;
+}
+
+.background {
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(1px);
+	z-index: -1;
+}
+
+.eventBox{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -14,11 +46,24 @@
 	width: 326px;
 	height: 101px;
 	margin:auto;
-	background: rgba(0, 0, 0, 0.6);
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-	backdrop-filter: blur(1px);
 }
-.Close {
+
+.menuBox{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+	isolation: isolate;
+
+	position: relative;
+	width: 326px;
+	height: 101px;
+	top:200px;
+	left:50px;
+}
+
+.closeModal {
 	background-image:url(images/closeIcon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -30,35 +75,72 @@
 	top:9%;
 }
 
-.TitleWrapper {
+.titleWrapper {
 	position: absolute;
 	top: 34%;
 }
 
-.IconEvent { 
-	background-image:url(images/AlertIcon.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:24px;
-	height:24px;
+.menuTitle {
+	color:rgba(255, 255, 255, 1);
+}
+
+.icon { 
 	position:absolute;
 	left:0px;
 	top:2.5px;
 }
 
-.EventTitle {
-	color:rgba(255, 255, 255, 1);
-	width:61px;
-	height:29px;
+.iconBtn { 
 	position:absolute;
-	left:28px;
-	top:0px;
-	font-family:DM Sans;
-	text-align:left;
-	font-size:22px;
+	left:0px;
+	margin:8px;
 }
 
-.EventText {
+.textButton { 
+	margin-left:24px;
+}
+
+
+.iconEvent { 
+	background-image:url(images/AlertIcon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:24px;
+	height:24px;
+}
+
+.menuTitle {
+	color:rgba(255, 255, 255, 1);
+	position:absolute;
+	text-align:left;
+}
+
+.primaryButton {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 16px;
+	gap: 8px;
+	width: 290px;
+	height: 30px;
+	background: #4339F2;
+	border-radius: 10px;
+	position:relative;
+	top:40px;
+}
+
+.primaryButton:hover {
+      background-color:#002ead;
+      transition: 0.7s;
+}
+
+
+
+.h4.primaryButton {
+	color:rgba(255, 255, 255, 1);
+}
+
+.eventText {
 	color:rgba(255, 255, 255, 1);
 	opacity:0.6000000238418579;
 	width:273px;
@@ -71,7 +153,7 @@
 	font-size:14px;
 }
 
-.PlayerInfo { 
+.playerInfo { 
 	width:250px;
 	height:120px;
 	position:absolute;
@@ -79,34 +161,29 @@
 	top:50px;
 }
 
-.PlayerName { 
+.playerName { 
 	color:rgba(255, 255, 255, 1);
 	position:absolute;
 	left:52px;
-	font-family:DM Sans;
 	text-align:left;
-	font-size:24px;
 }
-.PlayerTrait { 
+.playerTrait { 
 	color:rgba(255, 255, 255, 1);
 	opacity:0.30000001192092896;
-	width:100px;
 	height:20px;
 	position:absolute;
 	left:52px;
 	top:26px;
-	font-family:DM Sans;
 	text-align:left;
-	font-size:14px;
 }
-.AvatarContainer { 
+.avatarContainer { 
 	width:44px;
 	height:44px;
 	position:absolute;
 	left:0px;
 	top:0px;
 }
-.PlayerAvatar { 
+.playerAvatar { 
 	width:44px;
 	height:44px;
 	position:absolute;
@@ -116,14 +193,12 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.LevelContainer { 
-	width:89px;
-	height:30px;
+.levelContainer { 
 	position:absolute;
 	left:0px;
 	top:52px;
 }
-.CircleContainer { 
+.circleContainer { 
 	width:30px;
 	height:30px;
 	position:absolute;
@@ -131,18 +206,7 @@
 	top:0px;
 }
 
-.IconCircleLevel { 
-	border-radius:500px;
-	background-color:rgba(0, 0, 0, 1);
-	opacity:0.25;
-	width:30px;
-	height:30px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-
-.IconLevel { 
+.iconLevel { 
 	background-image:url(images/levelIcon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -153,25 +217,43 @@
 	top:7px;
 }
 
-.PlayerLevel { 
+.iconHouse { 
+	background-image:url(images/iconHouse.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:20px;
+	height:20px;
+	position:absolute;
+	left:7px;
+	top:7px;
+}
+
+.iconGarage { 
+	background-image:url(images/iconGarage.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:20px;
+	height:20px;
+	position:absolute;
+	left:7px;
+	top:7px;
+}
+
+.playerLevel { 
 	color:rgba(255, 255, 255, 1);
 	width:100px;
 	position:absolute;
 	left:38px;
 	top:5px;
-	font-family:DM Sans;
 	text-align:left;
-	font-size:16px;
 }
 
-.MoneyContainer { 
-	width:84px;
-	height:30px;
+.moneyContainer { 
 	position:absolute;
 	left:0px;
 	top:90px;
 }
-.IconCircleMoney { 
+.iconCircle { 
 	border-radius:500px;
 	background-color:rgba(0, 0, 0, 1);
 	opacity:0.25;
@@ -181,7 +263,7 @@
 	left:0px;
 	top:0px;
 }
-.IconMoney { 
+.iconMoney { 
 	background-image:url(images/moneyIcon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -192,15 +274,13 @@
 	top:7px;
 }
 
-.PlayerMoney { 
+.playerMoney { 
 		color:rgba(255, 255, 255, 1);
 	width:100px;
 	position:absolute;
 	left:38px;
 	top:5px;
-	font-family:DM Sans;
 	text-align:left;
-	font-size:16px;
 }
 
 #main-menu-container {
