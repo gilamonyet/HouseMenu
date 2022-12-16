@@ -1,9 +1,137 @@
 @font-face {
-    font-family: 'Secular One', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.PlayerInfo { 
+	width:250px;
+	height:120px;
+	position:absolute;
+	left:50px;
+	top:50px;
+}
+
+.PlayerName { 
+	color:rgba(255, 255, 255, 1);
+	position:absolute;
+	left:52px;
+	font-family:DM Sans;
+	text-align:left;
+	font-size:24px;
+}
+.PlayerTrait { 
+	color:rgba(255, 255, 255, 1);
+	opacity:0.30000001192092896;
+	width:100px;
+	height:20px;
+	position:absolute;
+	left:52px;
+	top:26px;
+	font-family:DM Sans;
+	text-align:left;
+	font-size:14px;
+}
+.AvatarContainer { 
+	width:44px;
+	height:44px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.PlayerAvatar { 
+	width:44px;
+	height:44px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/avatar.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.LevelContainer { 
+	width:89px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:52px;
+}
+.CircleContainer { 
+	width:30px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.IconCircleLevel { 
+	border-radius:500px;
+	background-color:rgba(0, 0, 0, 1);
+	opacity:0.25;
+	width:30px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.IconLevel { 
+	background-image:url(images/levelIcon.png);
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:7px;
+	top:7px;
+}
+
+.PlayerLevel { 
+	color:rgba(255, 255, 255, 1);
+	width:100px;
+	position:absolute;
+	left:38px;
+	top:5px;
+	font-family:DM Sans;
+	text-align:left;
+	font-size:16px;
+}
+
+.MoneyContainer { 
+	width:84px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:90px;
+}
+.IconCircleMoney { 
+	border-radius:500px;
+	background-color:rgba(0, 0, 0, 1);
+	opacity:0.25;
+	width:30px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.IconMoney { 
+	background-image:url(images/moneyIcon.png);
+	width:16px;
+	height:16px;
+	position:absolute;
+	left:7px;
+	top:7px;
+}
+
+.PlayerMoney { 
+		color:rgba(255, 255, 255, 1);
+	width:100px;
+	position:absolute;
+	left:38px;
+	top:5px;
+	font-family:DM Sans;
+	text-align:left;
+	font-size:16px;
 }
 
 #main-menu-container {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	position: relative;
 	text-align: center;
 	top: 100px;
@@ -33,7 +161,7 @@
 .loading-text {
     position: relative;
     color: white;
-    font-family: 'Secular One';
+    font-family: 'DM Sans';
     text-align: center;
     top: 68%;
     font-size: 80px;
@@ -42,7 +170,7 @@
 .loading-sub-text {
     position: relative;
     color: white;
-    font-family: 'Secular One';
+    font-family: 'DM Sans';
     text-align: center;
     top: 68.5%;
     font-size: 20px;
@@ -55,7 +183,7 @@
 
 #house-menu {
 	position: absolute;
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	top: 200px;
 	left: 50px;
 	background: rgba(0, 0, 0, 0.2);
@@ -122,7 +250,7 @@
 }
 
 .force-font {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	font-weight: 20 !important;
 }
 
@@ -295,12 +423,12 @@
 }
 
 #return-menu-button {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	position: absolute;
 	top: -5px;
 	left: 30px;
 	transition: 0.2s ease all 0s;
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
@@ -322,11 +450,11 @@
 }
 
 #leave-menu-button {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	position: fixed;
 	right: 30px;
 	transition: 0.2s ease all 0s;
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
@@ -359,7 +487,7 @@
 /* MODAL */
 
 #sell-confirmation-modal {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	color: black;
 	background: white;
 	position: fixed;
@@ -374,7 +502,7 @@
 	text-align: center;
 }
 #info-modal {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	color: black;
 	background: white;
 	position: fixed;
@@ -417,7 +545,7 @@
 }
 
 #transfer-modal {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	color: black;
 	background: white;
 	position: fixed;
@@ -436,10 +564,10 @@
 }
 
 #modal-confirm {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	position: relative;
 	transition: 0.2s ease all 0s;
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
@@ -461,10 +589,10 @@
 }
 
 #modal-cancel {
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	position: relative;
 	transition: 0.2s ease all 0s;
-	font-family: 'Secular One';
+	font-family: 'DM Sans';
 	border-radius: 100rem;
 	font-size: 22px;
 	padding: 8px 40px;
